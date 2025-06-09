@@ -26,3 +26,15 @@ After downloading, extract the contents and rename the folder to `dataset/`.
 
 ```bash
 pip install tensorflow keras opencv-python flask
+
+
+AI_Plant_Disease_Detection/
+│
+├── dataset/                     # PlantVillage images (downloaded manually)
+├── train_model.py               # Model training script
+├── predict.py                   # Image prediction script
+├── plant_disease_model.h5       # Trained model (after training)
+├── app.py                       # Flask web server
+├── templates/
+│   └── index.html               # Web interface
+└── README.md                    # Project documentation
