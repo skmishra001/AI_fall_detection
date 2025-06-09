@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Disease Detector</title>
+</head>
+<body>
+    <h2>Upload a Leaf Image</h2>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Detect Disease">
+    </form>
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
